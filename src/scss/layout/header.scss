@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: transparent;
+}
+
+.scroll-header {
+  background-color: var(--body-color);
+  box-shadow: 0 0 4px hsla(var(--hue-color), 64%, 15%, 0.15);
+}
+
+.scroll-header .nav__logo,
+.scroll-header .nav__toggle-icon {
+  color: var(--title-color);
+}
+
+@media screen and (min-width: 768px) {
+  .scroll-header .nav__link {
+    color: var(--text-color);
+  }
+
+  .scroll-header .nav__link--active {
+    color: var(--title-color);
+  }
+
+  .scroll-header .nav__link--active::before {
+    background-color: var(--title-color);
+  }
+
+  .scroll-header .theme-toggle__icon {
+    color: var(--text-color);
+  }
+}

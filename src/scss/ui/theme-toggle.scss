@@ -1,0 +1,36 @@
+.theme-toggle {
+  position: absolute;
+  left: 3rem;
+  bottom: 4rem;
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.theme-toggle__name,
+.theme-toggle__icon {
+  color: var(--text-color);
+}
+
+.theme-toggle__name {
+  font-size: var(--small-font-size);
+}
+
+.theme-toggle__icon {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .theme-toggle {
+    position: initial;
+  }
+
+  .theme-toggle__name {
+    display: none;
+  }
+
+  .theme-toggle__icon {
+    color: var(--white-color);
+  }
+}
